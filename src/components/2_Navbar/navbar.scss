@@ -1,0 +1,60 @@
+// set vars
+$navbar-width: 240px;
+
+nav#navWrap {
+	background: #000000;
+	width: 100vw;
+	height: 7.5vh;
+
+	ul#ulContainer {
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-columns: [col-1] 1fr [col-2] $navbar-width [col-3] $navbar-width [col-4] $navbar-width [col-5] $navbar-width [col-6] 1fr [col-7];
+		grid-template-rows: [row-1] 1fr [row-2];
+
+		li.liItems {
+			list-style: none;
+			justify-self: center;
+			align-self: center;
+			font-size: 1.5rem;
+			color: #fdfdfd;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		li#daredevil {
+			grid-column: 2/3;
+
+			&:hover {
+				color: #E32800;
+			}
+		}
+
+		li#jessica {
+			grid-column: 3/4;
+
+			&:hover {
+				color: #C806C8;
+			}
+		}
+
+		li#luke {
+			grid-column: 4/5;
+
+			&:hover {
+				color: #FFCA18;
+			}
+		}
+
+		li#iron {
+			grid-column: 5/6;
+
+			&:hover {
+				color: #91DE00;
+			}
+		}
+	}
+}

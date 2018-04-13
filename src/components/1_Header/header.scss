@@ -1,0 +1,64 @@
+$overlay-opacity: 0.3;
+
+
+header {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+
+
+	figure#headerFig {
+		position: absolute;
+		width: 100%;
+		height: 92.5vh;
+		background: url('./img/header_defenders.jpg');
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 1;
+	}
+
+	ul#overLayWrap {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-columns:
+			[col-1] 1fr [col-2] 1fr [col-3] 1fr
+			[col-4] 1fr [col-5];
+		grid-template-rows:
+			[row-1] 1fr [row-2];
+		z-index: 2;
+
+		li#overLayDaredevil {
+			grid-column: 4/5;
+			grid-row: 1/2;
+			background-color: #E32800;
+			opacity: $overlay-opacity;
+
+		}
+
+		li#overLayJessica {
+			grid-column: col-3/col-4;
+			grid-row: row-1/row-2;
+			background: #C806C8;
+			opacity: $overlay-opacity;
+		}
+
+		li#overLayLuke {
+			grid-column: col-2/col-3;
+			grid-row: row-1/row-2;
+			background: #FFCA18;
+			opacity: $overlay-opacity;
+		}
+
+		li#overLayIron {
+			grid-column: col-1/col-2;
+			grid-row: row-1/row-2;
+			background: #91DE00;
+			opacity: $overlay-opacity;
+		}
+
+	}
+}

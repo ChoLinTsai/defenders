@@ -1,0 +1,22 @@
+.defendersContent {
+  width: 100vw;
+  height: 100vh;
+  background: url('./img/defenders.jpg');
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns:
+    [c1] 1fr [c2] 800px [c3] 1fr [c4];
+  grid-template-rows:
+    [r1] 1fr [r2] 450px [r3] 2fr [r4];
+
+  iframe {
+    width: 800px;
+    height: 450px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    box-shadow: 0 0 100px #333;
+  }
+
+}

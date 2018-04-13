@@ -1,0 +1,22 @@
+.bannerDefenders {
+  width: 100vw;
+  height: 350px;
+  background: #000000;
+  display: grid;
+  grid-template-columns:
+    [c1] 250px [c2] 1fr [c3] 250px [c4];
+  grid-template-rows:
+    [r1] 1fr [r2];
+
+  h1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    font-size: 10rem;
+    color: #fdfdfd;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+  }
+
+}

@@ -1,0 +1,41 @@
+.bannerjessica {
+  width: 100vw;
+  height: 350px;
+  background: #000000;
+  display: grid;
+  grid-template-columns:
+    [c1] 1fr [c2] 350px [c3] 500px [c4];
+  grid-template-rows:
+    [r1] 1fr [r2];
+
+  .p1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    font-size: 7rem;
+    color: #C806C8;
+    text-transform: uppercase;
+  }
+
+  figure {
+    width: 100%;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url("./img/banner_jessica.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+  }
+
+  .p2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    font-size: 7rem;
+    color: #C806C8;
+    text-transform: uppercase;
+  }
+}

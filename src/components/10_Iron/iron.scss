@@ -1,0 +1,21 @@
+.ironContent {
+  width: 100vw;
+  height: 100vh;
+  background: url("./img/iron.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns:
+    [c1] 1fr [c2] 640px [c3] 150px [c4];
+  grid-template-rows:
+    [r1] 250px [r2] 360px [r3] 1fr [r4];
+
+  iframe {
+    width: 640px;
+    height: 360px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    box-shadow: 0 0 100px #91DE00;
+  }
+}
